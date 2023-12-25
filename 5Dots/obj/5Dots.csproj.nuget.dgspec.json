@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\MVCProject\\5Dots-FPE\\5Dots\\5Dots.csproj": {}
+    "C:\\Users\\Someone\\Desktop\\5Dots\\5Dot\\5Dots\\5Dots.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\MVCProject\\5Dots-FPE\\5Dots\\5Dots.csproj": {
+    "C:\\Users\\Someone\\Desktop\\5Dots\\5Dot\\5Dots\\5Dots.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\MVCProject\\5Dots-FPE\\5Dots\\5Dots.csproj",
+        "projectUniqueName": "C:\\Users\\Someone\\Desktop\\5Dots\\5Dot\\5Dots\\5Dots.csproj",
         "projectName": "5Dots",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\MVCProject\\5Dots-FPE\\5Dots\\5Dots.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\MVCProject\\5Dots-FPE\\5Dots\\obj\\",
+        "projectPath": "C:\\Users\\Someone\\Desktop\\5Dots\\5Dot\\5Dots\\5Dots.csproj",
+        "packagesPath": "C:\\Users\\Someone\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Someone\\Desktop\\5Dots\\5Dot\\5Dots\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Someone\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,6 +56,10 @@
               "target": "Package",
               "version": "[6.0.24, )"
             },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.23, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[6.0.24, )"
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
