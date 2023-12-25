@@ -1,6 +1,8 @@
 using _5Dots.Data;
+using _5Dots.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace _5Dots
 {
@@ -19,6 +21,8 @@ namespace _5Dots
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
+            ////
+            //builder.Services.AddTransient<UserManager<User>>();
 
             var app = builder.Build();
 
