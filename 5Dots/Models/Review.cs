@@ -21,6 +21,9 @@ namespace _5Dots.Models
 
         public Product Product { get; set; }
 
+        [Required(ErrorMessage = "Testimonial status is required")]
+        public string ReviewStatus { get; set; }
+
         [Required(ErrorMessage = "User ID is required")]
         public string UserId { get; set; }
 
