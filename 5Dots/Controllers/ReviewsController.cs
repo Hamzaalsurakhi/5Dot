@@ -59,7 +59,7 @@ namespace _5Dots.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ReviewId,ReviewMessage,ReviewRate,ReviewDate,ProductId,UserId")] Review review)
+        public async Task<IActionResult> Create([Bind("ReviewId,ReviewMessage,ReviewRate,ReviewDate,ProductId,ReviewStatus,UserId")] Review review)
         {
             if (ModelState.IsValid)
             {
@@ -95,7 +95,7 @@ namespace _5Dots.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ReviewId,ReviewMessage,ReviewRate,ReviewDate,ProductId,UserId")] Review review)
+        public async Task<IActionResult> Edit(int id, [Bind("ReviewId,ReviewMessage,ReviewRate,ReviewDate,ProductId,ReviewStatus,UserId")] Review review)
         {
             if (id != review.ReviewId)
             {

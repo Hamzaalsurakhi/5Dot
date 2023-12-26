@@ -1,719 +1,719 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\5Dots.bundle.scp.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\5Dots.bundle.scp.css",
       "PackagePath": "staticwebassets\\5Dots.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\Source\\OwlCarousel2-2.3.4.zip",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\Source\\OwlCarousel2-2.3.4.zip",
       "PackagePath": "staticwebassets\\assets\\Source\\OwlCarousel2-2.3.4.zip"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\Source\\SlickNav-master.zip",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\Source\\SlickNav-master.zip",
       "PackagePath": "staticwebassets\\assets\\Source\\SlickNav-master.zip"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\Source\\bootstrap-4.4.1-dist.zip",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\Source\\bootstrap-4.4.1-dist.zip",
       "PackagePath": "staticwebassets\\assets\\Source\\bootstrap-4.4.1-dist.zip"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\Source\\font-awesome-4.7.0.zip",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\Source\\font-awesome-4.7.0.zip",
       "PackagePath": "staticwebassets\\assets\\Source\\font-awesome-4.7.0.zip"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\Source\\jquery-nice-select-1.1.0.zip",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\Source\\jquery-nice-select-1.1.0.zip",
       "PackagePath": "staticwebassets\\assets\\Source\\jquery-nice-select-1.1.0.zip"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\Source\\jquery-ui-1.12.1.zip",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\Source\\jquery-ui-1.12.1.zip",
       "PackagePath": "staticwebassets\\assets\\Source\\jquery-ui-1.12.1.zip"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\Source\\sass.zip",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\Source\\sass.zip",
       "PackagePath": "staticwebassets\\assets\\Source\\sass.zip"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\css\\elegant-icons.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\css\\elegant-icons.css",
       "PackagePath": "staticwebassets\\assets\\css\\elegant-icons.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\css\\font-awesome.min.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\css\\font-awesome.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\font-awesome.min.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\css\\jquery-ui.min.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\css\\jquery-ui.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\jquery-ui.min.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\css\\nice-select.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\css\\nice-select.css",
       "PackagePath": "staticwebassets\\assets\\css\\nice-select.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\css\\owl.carousel.min.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\css\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\owl.carousel.min.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\css\\slicknav.min.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\css\\slicknav.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\slicknav.min.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\css\\style.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\css\\style.css",
       "PackagePath": "staticwebassets\\assets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\ElegantIcons.eot",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\ElegantIcons.eot",
       "PackagePath": "staticwebassets\\assets\\fonts\\ElegantIcons.eot"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\ElegantIcons.svg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\ElegantIcons.svg",
       "PackagePath": "staticwebassets\\assets\\fonts\\ElegantIcons.svg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\ElegantIcons.ttf",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\ElegantIcons.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\ElegantIcons.ttf"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\ElegantIcons.woff",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\ElegantIcons.woff",
       "PackagePath": "staticwebassets\\assets\\fonts\\ElegantIcons.woff"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\FontAwesome.otf",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\FontAwesome.otf",
       "PackagePath": "staticwebassets\\assets\\fonts\\FontAwesome.otf"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\fontawesome-webfont.eot",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\fontawesome-webfont.eot",
       "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.eot"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\fontawesome-webfont.svg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\fontawesome-webfont.svg",
       "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.svg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\fontawesome-webfont.ttf",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\fontawesome-webfont.ttf",
       "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff",
       "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff2",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff2",
       "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\banner\\banner-1.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\banner\\banner-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\banner-1.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\banner\\banner-2.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\banner\\banner-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner\\banner-2.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\blog-1.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\blog-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-1.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\blog-2.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\blog-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-2.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\blog-3.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\blog-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-3.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\blog-4.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\blog-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-4.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\blog-5.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\blog-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-5.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\blog-6.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\blog-6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-6.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\details\\details-author.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\details\\details-author.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\details\\details-author.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\details\\details-hero.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\details\\details-hero.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\details\\details-hero.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\details\\details-pic.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\details\\details-pic.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\details\\details-pic.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\sidebar\\sr-1.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\sidebar\\sr-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\sidebar\\sr-1.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\sidebar\\sr-2.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\sidebar\\sr-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\sidebar\\sr-2.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\sidebar\\sr-3.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\blog\\sidebar\\sr-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\sidebar\\sr-3.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\breadcrumb.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\breadcrumb.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\breadcrumb.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\cart\\cart-1.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\cart\\cart-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\cart\\cart-1.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\cart\\cart-2.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\cart\\cart-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\cart\\cart-2.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\cart\\cart-3.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\cart\\cart-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\cart\\cart-3.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\categories\\cat-1.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\categories\\cat-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\categories\\cat-1.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\categories\\cat-2.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\categories\\cat-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\categories\\cat-2.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\categories\\cat-3.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\categories\\cat-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\categories\\cat-3.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\categories\\cat-4.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\categories\\cat-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\categories\\cat-4.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\categories\\cat-5.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\categories\\cat-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\categories\\cat-5.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-1.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\featured\\feature-1.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-2.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\featured\\feature-2.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-3.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\featured\\feature-3.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-4.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\featured\\feature-4.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-5.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\featured\\feature-5.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-6.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\featured\\feature-6.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-7.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\featured\\feature-7.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-8.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\featured\\feature-8.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\featured\\feature-8.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\hero\\banner.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\hero\\banner.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\hero\\banner.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\language.png",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\language.png",
       "PackagePath": "staticwebassets\\assets\\img\\language.png"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\latest-product\\lp-1.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\latest-product\\lp-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\latest-product\\lp-1.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\latest-product\\lp-2.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\latest-product\\lp-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\latest-product\\lp-2.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\latest-product\\lp-3.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\latest-product\\lp-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\latest-product\\lp-3.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\logo.png",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\logo.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo.png"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\payment-item.png",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\payment-item.png",
       "PackagePath": "staticwebassets\\assets\\img\\payment-item.png"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\product-details-1.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\product-details-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\details\\product-details-1.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\product-details-2.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\product-details-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\details\\product-details-2.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\product-details-3.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\product-details-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\details\\product-details-3.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\product-details-4.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\product-details-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\details\\product-details-4.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\product-details-5.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\product-details-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\details\\product-details-5.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\thumb-1.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\thumb-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\details\\thumb-1.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\thumb-2.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\thumb-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\details\\thumb-2.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\thumb-3.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\thumb-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\details\\thumb-3.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\thumb-4.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\details\\thumb-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\details\\thumb-4.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\discount\\pd-1.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\discount\\pd-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\discount\\pd-1.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\discount\\pd-2.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\discount\\pd-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\discount\\pd-2.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\discount\\pd-3.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\discount\\pd-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\discount\\pd-3.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\discount\\pd-4.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\discount\\pd-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\discount\\pd-4.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\discount\\pd-5.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\discount\\pd-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\discount\\pd-5.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\discount\\pd-6.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\discount\\pd-6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\discount\\pd-6.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-1.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\product-1.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-10.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-10.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\product-10.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-11.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-11.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\product-11.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-12.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-12.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\product-12.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-2.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\product-2.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-3.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\product-3.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-4.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\product-4.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-5.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\product-5.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-6.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\product-6.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-7.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\product-7.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-8.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-8.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\product-8.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-9.jpg",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\img\\product\\product-9.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\product-9.jpg"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\index.html",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\index.html",
       "PackagePath": "staticwebassets\\assets\\index.html"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\js\\jquery-3.3.1.min.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\js\\jquery-3.3.1.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\jquery-3.3.1.min.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\js\\jquery-ui.min.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\js\\jquery-ui.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\jquery-ui.min.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\js\\jquery.nice-select.min.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\js\\jquery.nice-select.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\jquery.nice-select.min.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\js\\jquery.slicknav.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\js\\jquery.slicknav.js",
       "PackagePath": "staticwebassets\\assets\\js\\jquery.slicknav.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\js\\main.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\js\\main.js",
       "PackagePath": "staticwebassets\\assets\\js\\main.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\js\\mixitup.min.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\js\\mixitup.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\mixitup.min.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\js\\owl.carousel.min.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\js\\owl.carousel.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.min.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_base.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_base.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_base.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_blog-details.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_blog-details.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_blog-details.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_blog-sidebar.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_blog-sidebar.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_blog-sidebar.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_blog.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_blog.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_blog.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_breadcrumb.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_breadcrumb.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_breadcrumb.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_checkout.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_checkout.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_checkout.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_contact.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_contact.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_contact.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_footer.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_footer.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_footer.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_header.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_header.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_header.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_hero.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_hero.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_hero.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_home-page.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_home-page.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_home-page.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_mixins.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_mixins.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_mixins.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_responsive.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_responsive.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_responsive.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_shop-details.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_shop-details.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_shop-details.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_shop-grid.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_shop-grid.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_shop-grid.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_shoping-cart.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_shoping-cart.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_shoping-cart.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_sidebar.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_sidebar.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_sidebar.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_variable.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\_variable.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\_variable.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\assets\\sass\\style.scss",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\assets\\sass\\style.scss",
       "PackagePath": "staticwebassets\\assets\\sass\\style.scss"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

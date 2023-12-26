@@ -1,5 +1,6 @@
 ﻿using _5Dots.Data;
 using _5Dots.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -19,6 +20,7 @@ namespace _5Dots.Controllers
             _context = context;
             _userManager = userManager;
         }
+        [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.Users;
@@ -55,11 +57,11 @@ namespace _5Dots.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(User User, string Password,IFormFile FormFile)
+        public async Task<IActionResult> Create(User User, string Password, string ConfirmPassword, IFormFile FormFile)
         {
 
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
                 using (var stream = FormFile.OpenReadStream())
                 using (var reader = new BinaryReader(stream))
                 {
@@ -74,12 +76,20 @@ namespace _5Dots.Controllers
                 User.UserName = User.Email;
 
                 var result = await _userManager.CreateAsync(User, Password);
-
-                await _context.SaveChangesAsync();
+               
+                var Id = User.Id;
+                var roleId = "2";
+                var userRole = new IdentityUserRole<string>
+                {
+                    UserId = Id,
+                    RoleId = roleId
+                };
+                _context.UserRoles.Add(userRole);
+                _context.SaveChanges();
                 return RedirectToAction(nameof(Index));
-            }
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", User.Id);
-            return View(User);
+            //}
+            //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", User.Id);
+            //return View(User);
         }
 
         // GET: Users/Edit/5
