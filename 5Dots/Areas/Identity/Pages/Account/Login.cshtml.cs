@@ -15,6 +15,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using _5Dots.Models;
+using _5Dots.Data;
+using System.Security.Claims;
 
 namespace _5Dots.Areas.Identity.Pages.Account
 {
@@ -22,11 +24,15 @@ namespace _5Dots.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<User> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+        private readonly ApplicationDbContext _context;
 
-        public LoginModel(SignInManager<User> signInManager, ILogger<LoginModel> logger)
+
+
+        public LoginModel(SignInManager<User> signInManager, ILogger<LoginModel> logger, ApplicationDbContext context)
         {
             _signInManager = signInManager;
             _logger = logger;
+            _context = context;
         }
 
         /// <summary>
@@ -115,7 +121,15 @@ namespace _5Dots.Areas.Identity.Pages.Account
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
+
                     _logger.LogInformation("User logged in.");
+                    var id = _context.Users.Where(n => n.Email == Input.Email).SingleOrDefault();
+                    var c = _context.UserRoles.Where(n => n.UserId == id.Id).SingleOrDefault();
+
+                    if (c.RoleId == "1")
+                    {
+                        return RedirectToAction("Index","Admin");
+                    }
                     return LocalRedirect(returnUrl);
                 }
                 if (result.RequiresTwoFactor)
