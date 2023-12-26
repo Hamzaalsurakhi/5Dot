@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fh6lrImT8wKjH+0+rd8cQRVIOCuqN1+k5SaFrOWAC5clObBJUrWAJrRVMm2+mpf+tys/mnJhrCY5bAZnIDwhEA==",
+  "dgSpecHash": "2yLs50DUaxVA7J8nvT1mj7071+CmwK2uQEAyxUosORmC7q9oURCQX6b7vbLaTfwAmaO6Qg/it0aUJHhbUuUQPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\5Dots.csproj",
+  "projectFilePath": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\5Dots.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rania\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\rania\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

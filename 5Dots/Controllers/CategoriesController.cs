@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using _5Dots.Data;
 using _5Dots.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace _5Dots.Controllers
 {
+    //[Authorize(Roles = "ADMIN")]
     public class CategoriesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -96,7 +98,7 @@ namespace _5Dots.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CategoryId,CategoryName,CategoryDescription,ImageName,contentType,Image")] Category category)
+        public async Task<IActionResult> Edit(int id, [Bind("CategoryId,CategoryName,CategoryDescription,ImageName,contentType,Image")] Category category,IFormFile FormFile)
         {
             if (id != category.CategoryId)
             {
@@ -107,6 +109,14 @@ namespace _5Dots.Controllers
             {
                 try
                 {
+                    using (var stream = FormFile.OpenReadStream())
+                    using (var reader = new BinaryReader(stream))
+                    {
+                        var byteFile = reader.ReadBytes((int)stream.Length);
+                        category.Image = byteFile;
+                    }
+                    category.ImageName = FormFile.FileName;
+                    category.contentType = FormFile.ContentType;
                     _context.Update(category);
                     await _context.SaveChangesAsync();
                 }

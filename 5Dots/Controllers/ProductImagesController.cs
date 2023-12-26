@@ -57,10 +57,18 @@ namespace _5Dots.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ImageId,ProductId,ImageName,ContentType,Image")] ProductImage productImage)
+        public async Task<IActionResult> Create([Bind("ImageId,ProductId,ImageName,ContentType,Image")] ProductImage productImage,IFormFile FormFile)
         {
             if (ModelState.IsValid)
             {
+                using (var stream = FormFile.OpenReadStream())
+                using (var reader = new BinaryReader(stream))
+                {
+                    var byteFile = reader.ReadBytes((int)stream.Length);
+                    productImage.Image = byteFile;
+                }
+                productImage.ImageName = FormFile.FileName;
+                productImage.ContentType = FormFile.ContentType;
                 _context.Add(productImage);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -91,7 +99,7 @@ namespace _5Dots.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ImageId,ProductId,ImageName,ContentType,Image")] ProductImage productImage)
+        public async Task<IActionResult> Edit(int id,ProductImage productImage,IFormFile FormFile)
         {
             if (id != productImage.ImageId)
             {
@@ -102,6 +110,14 @@ namespace _5Dots.Controllers
             {
                 try
                 {
+                    using (var stream = FormFile.OpenReadStream())
+                    using (var reader = new BinaryReader(stream))
+                    {
+                        var byteFile = reader.ReadBytes((int)stream.Length);
+                        productImage.Image = byteFile;
+                    }
+                    productImage.ImageName = FormFile.FileName;
+                    productImage.ContentType = FormFile.ContentType;
                     _context.Update(productImage);
                     await _context.SaveChangesAsync();
                 }

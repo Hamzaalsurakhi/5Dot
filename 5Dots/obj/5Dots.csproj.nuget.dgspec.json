@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\5Dots.csproj": {}
+    "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\5Dots.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\5Dots.csproj": {
+    "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\5Dots.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\5Dots.csproj",
+        "projectUniqueName": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\5Dots.csproj",
         "projectName": "5Dots",
-        "projectPath": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\5Dots.csproj",
+        "projectPath": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\5Dots.csproj",
         "packagesPath": "C:\\Users\\rania\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rania\\OneDrive\\Desktop\\5Dot\\5Dot\\5Dots\\obj\\",
+        "outputPath": "C:\\Users\\rania\\OneDrive\\Desktop\\EC Pro\\5Dot\\5Dots\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rania\\AppData\\Roaming\\NuGet\\NuGet.Config",
