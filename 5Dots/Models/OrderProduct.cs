@@ -10,7 +10,6 @@ namespace _5Dots.Models
 
         public Order Order { get; set; }
 
-
         [Key]
         public int ProductId { get; set; }
 

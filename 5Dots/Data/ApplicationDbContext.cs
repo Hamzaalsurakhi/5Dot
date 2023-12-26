@@ -27,12 +27,15 @@ namespace _5Dots.Data
         {
             base.OnModelCreating(builder);
 
-           
+
 
             builder.Entity<OrderProduct>()
                 .HasKey(os => new { os.OrderId, os.ProductId });
 
-     
+            builder.Entity<CartProduct>()
+                          .HasKey(os => new { os.CartId, os.ProductId });
+
+
 
         }
 
