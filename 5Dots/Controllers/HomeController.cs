@@ -1,5 +1,9 @@
-﻿using _5Dots.Models;
+﻿using _5Dots.Data;
+using _5Dots.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Data;
 using System.Diagnostics;
 
 namespace _5Dots.Controllers
@@ -7,16 +11,25 @@ namespace _5Dots.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ApplicationDbContext _context;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        public HomeController(ApplicationDbContext context,RoleManager<IdentityRole> roleManager)
         {
-            _logger = logger;
+            _context = context;
+            _roleManager = roleManager;
         }
+
+     
 
         public IActionResult Index()
         {
+            
+
             return View();
         }
+
+      
+
 
         public IActionResult Privacy()
         {

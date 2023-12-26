@@ -1117,3 +1117,4 @@ C:\Users\rania\OneDrive\Desktop\EC Pro\5Dot\5Dots\obj\Debug\net6.0\refint\5Dots.
 C:\Users\rania\OneDrive\Desktop\EC Pro\5Dot\5Dots\obj\Debug\net6.0\5Dots.pdb
 C:\Users\rania\OneDrive\Desktop\EC Pro\5Dot\5Dots\obj\Debug\net6.0\5Dots.genruntimeconfig.cache
 C:\Users\rania\OneDrive\Desktop\EC Pro\5Dot\5Dots\obj\Debug\net6.0\ref\5Dots.dll
+C:\Users\Someone\Desktop\5Dots\5Dot\5Dots\obj\Debug\net6.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css
