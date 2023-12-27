@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<User> signInManager
+<!DOCTYPE html>
 <html lang="zxx">
 
 <head>
@@ -7,7 +9,7 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ogani | Template</title>
+    <title>@ViewData["Title"] - 5Dots</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
@@ -21,6 +23,7 @@
     <link rel="stylesheet" href="~/assets/css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="~/assets/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="~/assets/css/style.css" type="text/css">
+
 </head>
 
 <body>
@@ -75,15 +78,13 @@
         </nav>
         <div id="mobile-menu-wrap"></div>
         <div class="header__top__right__social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="https://github.com/yousefweb/5Dot"><i class="fa-brands fa-github"></i></a>
+
         </div>
         <div class="humberger__menu__contact">
             <ul>
                 <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                <li>Free Shipping for all Order of $99</li>
+                <li>Free Shipping for all Order of 99 JD</li>
             </ul>
         </div>
     </div>
@@ -95,48 +96,69 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__left">
-                            <ul>
-                                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                                <li>Free Shipping for all Order of $99</li>
-                            </ul>
+                            @if (signInManager.IsSignedIn(User))
+                            {
+                        
+                                <p><i class="fa fa-envelope"></i> @User.Identity.Name</p>
+                            }
+                            <h4 style="background-color: #ec044c; color: #fff; padding: 2px; text-align: center; border-radius: 5px;">Free Shipping for All Orders Over 99JD</h4>
                         </div>
                     </div>
+
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__right">
                             <div class="header__top__right__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                @if (!string.IsNullOrWhiteSpace(User.Identity.Name))
+                                {
+                                    var emailParts = User.Identity.Name.Split('@');
+                                    var firstName = emailParts.Length > 0 ? emailParts[0] : User.Identity.Name;
+                                    <span style="font-weight: bold; text-align: left; color:forestgreen">Welcome @firstName to the Home Page</span>
+                                }
+                                <a href="https://github.com/yousefweb/5Dot" style="margin-left: 20px;"><i class="fa fa-brands fa-github"></i></a>
                             </div>
-                            <div class="header__top__right__language">
-                                <img src="~/assets/img/language.png" alt="">
-                                <div>English</div>
-                                <span class="arrow_carrot-down"></span>
-                                <ul>
-                                    <li><a href="#">Spanis</a></li>
-                                    <li><a href="#">English</a></li>
-                                </ul>
-                            </div>
-                            <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i> Login</a>
-                            </div>
+
+                            @if (signInManager.IsSignedIn(User))
+                            {
+                                <div class="header__top__right__auth">
+                                    <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+                                    </a>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="header__top__right__auth">
+                                    <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">
+                                        <i class="fa fa-sharp fa-solid fa-registered"></i> Register
+                                    </a>
+                                </div>
+                                <div class="header__top__right__auth">
+                                    <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">
+                                        <i class="fa fa-regular fa-user"></i> Login
+                                    </a>
+                                </div>
+                            }
                         </div>
                     </div>
                 </div>
+
+
+
+
+
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="~/assets/img/logo.png" alt=""></a>
+                        <a href=""><img src="~/assets/img/logo2.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li class="active"><a asp-action="Index" asp-controller="Home">Home</a></li>
                             <li><a href="./shop-grid.html">Shop</a></li>
                             <li>
                                 <a href="#">Pages</a>
@@ -155,10 +177,9 @@
                 <div class="col-lg-3">
                     <div class="header__cart">
                         <ul>
-                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                             <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                         </ul>
-                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                        <div class="header__cart__price">total: <span>$150.00</span></div>
                     </div>
                 </div>
             </div>
@@ -180,9 +201,9 @@
                             <a href="./index.html"><img src="~/assets/img/logo.png" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: 60-49 Road 11378 New York</li>
-                            <li>Phone: +65 11.188.888</li>
-                            <li>Email: hello@colorlib.com</li>
+                            <li>Address: ST:Sultan Qalawoon,Amman-Jordan</li>
+                            <li>Phone: +962795837513</li>
+                            <li>Email: yousef.aldeeb11@gmail.com</li>
                         </ul>
                     </div>
                 </div>
@@ -256,4 +277,4 @@
 </body>
 
 </html>
- 
+
