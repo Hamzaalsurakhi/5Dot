@@ -11,7 +11,7 @@ namespace _5Dots.Models
         public string ReviewMessage { get; set; }
 
         [Range(0, 5, ErrorMessage = "Review rate must be between 0 and 5")]
-        public decimal ReviewRate { get; set; }
+        public int ReviewRate { get; set; }
 
         [Required(ErrorMessage = "Review date is required")]
         public DateTime ReviewDate { get; set; }

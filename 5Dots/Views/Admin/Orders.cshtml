@@ -34,7 +34,7 @@
         <div class="card">
             <div class="card-header d-flex justify-content-between">
                 <div class="header-title">
-                    <h4 class="card-title">Users List</h4>
+                    <h4 class="card-title">Orders List</h4>
                 </div>
             </div>
             <div class="card-body">
@@ -43,26 +43,50 @@
                     <table id="datatable" class="table table-striped" data-toggle="data-table">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Phone Number</th>
+                                <th>User Name</th>
+                                <th>Total Price</th>
+                                <th>Status</th>
+                                <th>Details</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (var user in (List<User>)(ViewBag.Users))
+                            @foreach (var order in (List<Order>)(ViewBag.Orders))
                             {
                                 <tr>
-                                    <td>@user.FirstName @user.LastName</td>
-                                    <td>@user.Email</td>
-                                    <td>@user.PhoneNumber</td>
+                                    <td>@order.User.FirstName @order.User.LastName</td>
+                                    <td>@order.TotalPrice JD</td>
+                                    <td>
+                                        <select asp-for="@order.Status" onchange="confirmUpdateStatus(this.value, '@order.Status')">
+                                            @if (order.Status == "Pending")
+                                            {
+                                                <option value="Pending" selected>Pending</option>
+                                                <option value="Accept">Accept</option>
+                                                <option value="Reject">Reject</option>
+                                            }
+                                            else if (order.Status == "Accept")
+                                            {
+                                                <option value="Pending">Pending</option>
+                                                <option value="Accept" selected>Accept</option>
+                                                <option value="Reject">Reject</option>
+                                            }
+                                            else if (order.Status == "Reject")
+                                            {
+                                                <option value="Pending">Pending</option>
+                                                <option value="Accept">Accept</option>
+                                                <option value="Reject" selected>Reject</option>
+                                            }
+                                        </select>
+                                    </td>
+                                    <td><a href="/OrderProducts/OrderItems?orderId=@order.OrderId" class="btn btn-info mb-2">Details</a></td>
                                 </tr>
                             }
                         </tbody>
                         <tfoot>
                             <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Phone Number</th>
+                                <th>User Name</th>
+                                <th>Total Price</th>
+                                <th>Status</th>
+                                <th>Details</th>
                             </tr>
                         </tfoot>
                     </table>
@@ -71,3 +95,23 @@
         </div>
     </div>
 </div>
+
+<script>
+    function confirmUpdateStatus(orderId, newStatus, currentStatus) {
+        Swal.fire({
+            title: 'Are you sure?',
+            text: 'Do you really want to change the order status?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, update it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = `/Orders/EditOrderStatus?orderId=${orderId}&newStatus=${newStatus}`;
+            } else {
+                document.querySelector(`[value="${currentStatus}"]`).selected = true;
+            }
+        });
+    }
+</script>

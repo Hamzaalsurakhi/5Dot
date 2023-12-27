@@ -19,7 +19,7 @@ namespace _5Dots.Controllers
         {
             var Id = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var user = _context.Users.Where(user => user.Id == Id).SingleOrDefault();
-            ViewBag.Users = _context.Users.ToList();
+            ViewBag.Users = _context.Users.Where(user => user.Role == "User").ToList();
             ViewBag.Orders = _context.Orders.ToList();
             ViewBag.Categories = _context.Categories.ToList();
             ViewBag.Products = _context.Products.Include(product => product.Category).ToList();
@@ -30,7 +30,7 @@ namespace _5Dots.Controllers
         {
             var Id = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var user = _context.Users.Where(user => user.Id == Id).SingleOrDefault();
-            ViewBag.Users = _context.Users.ToList();
+            ViewBag.Users = _context.Users.Where(user => user.Role == "User").ToList();
             return View(user);
         }
         public IActionResult Categories()
@@ -59,6 +59,13 @@ namespace _5Dots.Controllers
             var Id = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var user = _context.Users.Where(user => user.Id == Id).SingleOrDefault();
             ViewBag.Testimonials = _context.Testimonials.Include(testimonial => testimonial.User).ToList();
+            return View(user);
+        }
+		public IActionResult Products(int CategoryId)
+		{
+			var Id = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+			var user = _context.Users.Where(user => user.Id == Id).SingleOrDefault();
+			ViewBag.Products = _context.Products.Include(product => product.Category).Where(product => product.CategoryId == CategoryId).ToList();
             return View(user);
         }
     }

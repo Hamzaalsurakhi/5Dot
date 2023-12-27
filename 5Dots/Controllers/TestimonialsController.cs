@@ -159,7 +159,14 @@ namespace _5Dots.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        public async Task<IActionResult> EditTestimonialStatus(int testimonialId, string newStatus)
+        {
+            var testimonial = await _context.Testimonials.FindAsync(testimonialId);
+            testimonial.TestimonialStatus = newStatus;
+            _context.Update(testimonial);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Testimonials", "Admin");
+        }
         private bool TestimonialExists(int id)
         {
           return (_context.Testimonials?.Any(e => e.TestimonialId == id)).GetValueOrDefault();
