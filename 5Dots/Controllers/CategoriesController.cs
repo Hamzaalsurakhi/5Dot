@@ -60,8 +60,8 @@ namespace _5Dots.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Category category, IFormFile FormFile)
         {
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
                 using (var stream = FormFile.OpenReadStream())
                 using (var reader = new BinaryReader(stream))
                 {
@@ -73,8 +73,8 @@ namespace _5Dots.Controllers
                 _context.Add(category);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
-            return View(category);
+            //}
+            //return View(category);
         }
 
         // GET: Categories/Edit/5
