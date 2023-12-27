@@ -74,6 +74,7 @@ namespace _5Dots.Controllers
                 User.NormalizedEmail = User.Email.ToUpper();
                 User.NormalizedUserName = User.Email.ToUpper();
                 User.UserName = User.Email;
+                User.Role = "User";
 
                 var result = await _userManager.CreateAsync(User, Password);
                

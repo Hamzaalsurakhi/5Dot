@@ -121,6 +121,7 @@ namespace _5Dots.Areas.Identity.Pages.Account
                 user.FirstName = "Admin";
                 user.LastName = "5Dots";
                 user.EmailConfirmed = true;
+                user.Role = "Admin";
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
@@ -151,7 +152,7 @@ namespace _5Dots.Areas.Identity.Pages.Account
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
-                        return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
+                        return RedirectToAction("Index","Admin");
                     }
                     else
                     {

@@ -165,7 +165,14 @@ namespace _5Dots.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        public async Task<IActionResult> EditReviewStatus(int reviewId, string newStatus)
+        {
+            var review = await _context.Reviews.FindAsync(reviewId);
+            review.ReviewStatus = newStatus;
+            _context.Update(review);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("ProductReviews", "Admin");
+        }
         private bool ReviewExists(int id)
         {
           return (_context.Reviews?.Any(e => e.ReviewId == id)).GetValueOrDefault();

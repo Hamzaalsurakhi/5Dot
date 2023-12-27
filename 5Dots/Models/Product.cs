@@ -31,6 +31,13 @@ namespace _5Dots.Models
         [Required(ErrorMessage = "Category is required")]
         public Category Category { get; set; }
 
+        [Required]
+        public string ImageName { get; set; }
+        [Required]
+        public string contentType { get; set; }
+        [Required]
+        public byte[] Image { get; set; }
+
         //public List<Order> Orders { get; set; }
     }
 }

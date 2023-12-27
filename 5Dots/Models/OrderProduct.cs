@@ -13,7 +13,6 @@ namespace _5Dots.Models
         [Key]
         public int ProductId { get; set; }
 
-
         public Product Product { get; set; }
 
         [Required(ErrorMessage = "Quantity is required")]

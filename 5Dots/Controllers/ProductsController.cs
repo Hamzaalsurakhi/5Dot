@@ -57,16 +57,24 @@ namespace _5Dots.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductId,ProductName,ProductDescription,ProductPrice,ProductQuantityStock,ProductSale,CategoryId")] Product product)
+        public async Task<IActionResult> Create(Product product,IFormFile FormFile)
         {
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
+                using (var stream = FormFile.OpenReadStream())
+                using (var reader = new BinaryReader(stream))
+                {
+                    var byteFile = reader.ReadBytes((int)stream.Length);
+                    product.Image = byteFile;
+                }
+                product.ImageName = FormFile.FileName;
+                product.contentType = FormFile.ContentType;
                 _context.Add(product);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName", product.CategoryId);
-            return View(product);
+                return RedirectToAction("Products", "Admin", new { CategoryId = product.CategoryId});
+            //}
+            //ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName", product.CategoryId);
+            //return View(product);
         }
 
         // GET: Products/Edit/5
@@ -91,7 +99,7 @@ namespace _5Dots.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductId,ProductName,ProductDescription,ProductPrice,ProductQuantityStock,ProductSale,CategoryId")] Product product)
+        public async Task<IActionResult> Edit(int id, Product product, IFormFile FormFile)
         {
             if (id != product.ProductId)
             {
@@ -102,6 +110,14 @@ namespace _5Dots.Controllers
             {
                 try
                 {
+                    using (var stream = FormFile.OpenReadStream())
+                    using (var reader = new BinaryReader(stream))
+                    {
+                        var byteFile = reader.ReadBytes((int)stream.Length);
+                        product.Image = byteFile;
+                    }
+                    product.ImageName = FormFile.FileName;
+                    product.contentType = FormFile.ContentType;
                     _context.Update(product);
                     await _context.SaveChangesAsync();
                 }

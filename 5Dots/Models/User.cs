@@ -10,6 +10,8 @@ namespace _5Dots.Models
 
         [Required(ErrorMessage = "Last name is required")]
         public string LastName { get; set; }
+        [Required(ErrorMessage = "Role is required")]
+        public string Role { get; set; }
 
         [StringLength(255, ErrorMessage = "Image name length must be less than or equal to 255 characters")]
         public string ImageName { get; set; }

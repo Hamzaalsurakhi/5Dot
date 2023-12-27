@@ -123,10 +123,10 @@ namespace _5Dots.Areas.Identity.Pages.Account
                 {
 
                     _logger.LogInformation("User logged in.");
-                    var id = _context.Users.Where(n => n.Email == Input.Email).SingleOrDefault();
-                    var c = _context.UserRoles.Where(n => n.UserId == id.Id).SingleOrDefault();
+                    var user = _context.Users.Where(n => n.Email == Input.Email).SingleOrDefault();
+                    var userRole = _context.UserRoles.Where(n => n.UserId == user.Id).SingleOrDefault();
 
-                    if (c.RoleId == "1")
+                    if (userRole.RoleId == "1")
                     {
                         return RedirectToAction("Index","Admin");
                     }

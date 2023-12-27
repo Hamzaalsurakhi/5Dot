@@ -91,7 +91,7 @@ namespace _5Dots.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("OrderId,UserId,OrderRate,TotalPrice,Status")] Order order)
+        public async Task<IActionResult> Edit(int id,Order order)
         {
             if (id != order.OrderId)
             {
@@ -159,7 +159,14 @@ namespace _5Dots.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        public async Task<IActionResult> EditOrderStatus(int orderId,string newStatus)
+        {
+            var order = await _context.Orders.FindAsync(orderId);
+            order.Status = newStatus;
+            _context.Update(order);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Orders","Admin");
+        }
         private bool OrderExists(int id)
         {
           return (_context.Orders?.Any(e => e.OrderId == id)).GetValueOrDefault();

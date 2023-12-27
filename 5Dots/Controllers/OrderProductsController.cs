@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using _5Dots.Data;
 using _5Dots.Models;
+using System.Security.Claims;
 
 namespace _5Dots.Controllers
 {
@@ -165,7 +166,15 @@ namespace _5Dots.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        public IActionResult OrderItems(int orderId)
+        {
+            var Id = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var user = _context.Users.Where(user => user.Id == Id).SingleOrDefault();
+            ViewBag.OrderProducts = _context.OrderProduct.Include(orderProduct => orderProduct.Product).Include(orderProduct => orderProduct.Order).ThenInclude(order => order.User).Where(orderProduct => orderProduct.OrderId == orderId).ToList();
+            ViewBag.TotalPrice = _context.Orders.Where(order => order.OrderId == orderId).SingleOrDefault().TotalPrice;
+            return View(user);
 
+        }
         private bool OrderProductExists(int id)
         {
           return (_context.OrderProduct?.Any(e => e.OrderId == id)).GetValueOrDefault();

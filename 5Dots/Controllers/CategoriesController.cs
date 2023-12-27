@@ -72,7 +72,7 @@ namespace _5Dots.Controllers
                 category.contentType = FormFile.ContentType;
                 _context.Add(category);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Categories","Admin");
             //}
             //return View(category);
         }
@@ -98,7 +98,7 @@ namespace _5Dots.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CategoryId,CategoryName,CategoryDescription,ImageName,contentType,Image")] Category category,IFormFile FormFile)
+        public async Task<IActionResult> Edit(int id, Category category,IFormFile FormFile)
         {
             if (id != category.CategoryId)
             {
