@@ -59,8 +59,8 @@ namespace _5Dots.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ImageId,ProductId,ImageName,ContentType,Image")] ProductImage productImage,IFormFile FormFile)
         {
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
                 using (var stream = FormFile.OpenReadStream())
                 using (var reader = new BinaryReader(stream))
                 {
@@ -72,9 +72,9 @@ namespace _5Dots.Controllers
                 _context.Add(productImage);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
-            ViewData["ProductId"] = new SelectList(_context.Products, "ProductId", "ProductDescription", productImage.ProductId);
-            return View(productImage);
+            //}
+            //ViewData["ProductId"] = new SelectList(_context.Products, "ProductId", "ProductDescription", productImage.ProductId);
+            //return View(productImage);
         }
 
         // GET: ProductImages/Edit/5

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
 using System.Diagnostics;
+using System.Security.Claims;
 
 namespace _5Dots.Controllers
 {
@@ -21,9 +22,12 @@ namespace _5Dots.Controllers
 
      
 
-        public IActionResult Index()
+        public IActionResult Index(string selectedCategory)
         {
-            
+            ViewBag.products = _context.Products.ToList();
+            ViewBag.Categories = _context.Categories.ToList();
+            ViewBag.SelectedCategory = selectedCategory;
+            ViewBag.ProductImages = _context.ProductImages.ToList();
 
             return View();
         }
