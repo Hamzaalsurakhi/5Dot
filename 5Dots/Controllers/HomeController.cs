@@ -24,18 +24,22 @@ namespace _5Dots.Controllers
 
         public IActionResult Index(string selectedCategory)
         {
-            ViewBag.products = _context.Products.ToList();
-            ViewBag.Categories = _context.Categories.ToList();
+            ViewBag.products = _context.Products.Include(product => product.Category).ToList();
+            ViewBag.Categories = _context.Categories.Include(category => category.Products).ToList();
             ViewBag.SelectedCategory = selectedCategory;
             ViewBag.ProductImages = _context.ProductImages.ToList();
 
             return View();
         }
 
-      
+
 
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+        public IActionResult Contact()
         {
             return View();
         }

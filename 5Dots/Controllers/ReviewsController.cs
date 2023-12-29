@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using _5Dots.Data;
 using _5Dots.Models;
+using System.Security.Claims;
 
 namespace _5Dots.Controllers
 {
@@ -59,14 +60,21 @@ namespace _5Dots.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create( Review review)
+        public async Task<IActionResult> Create_( int id, int ReviewRate, string ReviewMessage)
         {
             //if (ModelState.IsValid)
             //{
             //review.UserId = 
-                _context.Add(review);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+            Review review = new Review();
+            review.ProductId = id;
+            review.ReviewRate = ReviewRate;
+            review.ReviewMessage = ReviewMessage;
+            review.ReviewDate = DateTime.Now;
+            review.ReviewStatus = "Pending";
+            review.UserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            _context.Add(review);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("ProductDetails", "Shop",new { id = id});
             //}
             //ViewData["ProductId"] = new SelectList(_context.Products, "ProductId", "ProductDescription", review.ProductId);
             //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", review.UserId);

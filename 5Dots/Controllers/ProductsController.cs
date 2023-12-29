@@ -100,43 +100,53 @@ namespace _5Dots.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Product product, IFormFile FormFile)
+        public async Task<IActionResult> Edit(Product product, IFormFile FormFile)
         {
-            if (id != product.ProductId)
-            {
-                return NotFound();
-            }
+            //if (id != product.ProductId)
+            //{
+            //    return NotFound();
+            //}
 
-            if (ModelState.IsValid)
+            //if (ModelState.IsValid)
+            //{
+            try
             {
-                try
+                Product p = _context.Products.Where(p => p.ProductId == product.ProductId).SingleOrDefault();
+                if (FormFile != null)
                 {
                     using (var stream = FormFile.OpenReadStream())
                     using (var reader = new BinaryReader(stream))
                     {
                         var byteFile = reader.ReadBytes((int)stream.Length);
-                        product.Image = byteFile;
+                        p.Image = byteFile;
                     }
-                    product.ImageName = FormFile.FileName;
-                    product.contentType = FormFile.ContentType;
-                    _context.Update(product);
-                    await _context.SaveChangesAsync();
+                    p.ImageName = FormFile.FileName;
+                    p.contentType = FormFile.ContentType;
                 }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ProductExists(product.ProductId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                p.ProductPrice = product.ProductPrice;
+                p.ProductSale = product.ProductSale;
+                p.ProductDescription = product.ProductDescription;
+                p.ProductName= product.ProductName;
+                p.ProductQuantityStock = product.ProductQuantityStock;
+                p.CategoryId = product.CategoryId;
+                _context.Update(p);
+                await _context.SaveChangesAsync();
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName", product.CategoryId);
-            return View(product);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ProductExists(product.ProductId))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return RedirectToAction(nameof(Index));
+            //}
+            //ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName", product.CategoryId);
+            //return View(product);
         }
 
         // GET: Products/Delete/5

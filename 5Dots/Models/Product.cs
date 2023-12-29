@@ -37,6 +37,8 @@ namespace _5Dots.Models
         public string contentType { get; set; }
         [Required]
         public byte[] Image { get; set; }
+        public List<Review> Reviews { get; set; }
+
 
         //public List<Order> Orders { get; set; }
     }
