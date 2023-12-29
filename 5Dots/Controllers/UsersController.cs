@@ -34,7 +34,7 @@ namespace _5Dots.Controllers
                 return NotFound();
             }
 
-            var User =  _context.Users
+            var User = _context.Users
                 .Where(m => m.Id == id).SingleOrDefault();
 
             if (User == null)
@@ -62,32 +62,32 @@ namespace _5Dots.Controllers
 
             //if (ModelState.IsValid)
             //{
-                using (var stream = FormFile.OpenReadStream())
-                using (var reader = new BinaryReader(stream))
-                {
-                    var byteFile = reader.ReadBytes((int)stream.Length);
-                    User.Image = byteFile;
-                }
-                User.ImageName = FormFile.FileName;
-                User.ContentType = FormFile.ContentType;
-                User.EmailConfirmed = true;
-                User.NormalizedEmail = User.Email.ToUpper();
-                User.NormalizedUserName = User.Email.ToUpper();
-                User.UserName = User.Email;
-                User.Role = "User";
+            using (var stream = FormFile.OpenReadStream())
+            using (var reader = new BinaryReader(stream))
+            {
+                var byteFile = reader.ReadBytes((int)stream.Length);
+                User.Image = byteFile;
+            }
+            User.ImageName = FormFile.FileName;
+            User.ContentType = FormFile.ContentType;
+            User.EmailConfirmed = true;
+            User.NormalizedEmail = User.Email.ToUpper();
+            User.NormalizedUserName = User.Email.ToUpper();
+            User.UserName = User.Email;
+            User.Role = "User";
 
-                var result = await _userManager.CreateAsync(User, Password);
-               
-                var Id = User.Id;
-                var roleId = "2";
-                var userRole = new IdentityUserRole<string>
-                {
-                    UserId = Id,
-                    RoleId = roleId
-                };
-                _context.UserRoles.Add(userRole);
-                _context.SaveChanges();
-                return RedirectToAction(nameof(Index));
+            var result = await _userManager.CreateAsync(User, Password);
+
+            var Id = User.Id;
+            var roleId = "2";
+            var userRole = new IdentityUserRole<string>
+            {
+                UserId = Id,
+                RoleId = roleId
+            };
+            _context.UserRoles.Add(userRole);
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
             //}
             //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", User.Id);
             //return View(User);
@@ -162,7 +162,7 @@ namespace _5Dots.Controllers
                 return NotFound();
             }
 
-            var User =  _context.Users
+            var User = _context.Users
                 .Where(u => u.Id == id)
                 .SingleOrDefault();
             if (User == null)
@@ -196,6 +196,122 @@ namespace _5Dots.Controllers
         {
             return (_context.Users?.Any(e => e.Id == id)).GetValueOrDefault();
         }
-        
+        #region Profile
+        public async Task<IActionResult> Profile()
+        {
+            var user = await _userManager.GetUserAsync(User);
+
+            if (user != null)
+            {
+                bool userExists = UserExists(user.Id);
+
+                if (userExists)
+                {
+                    var visa = _context.Visa
+                        .Where(v => v.UserId == user.Id)
+                        .FirstOrDefault();
+
+                    if (visa != null)
+                    {
+                        ViewBag.VisaNumber = visa.VisaNumber;
+                        ViewBag.ExpDate = visa.ExpDate;
+                    }
+
+                    List<User> users = new List<User>();
+                    users.AddRange(_context.Users);
+
+                    foreach (var existingUser in users)
+                    {
+                        if (user.Email == existingUser.Email && user.UserName == existingUser.UserName)
+                        {
+                            return View(existingUser);
+                        }
+                    }
+
+                    return View();
+                }
+            }
+
+            return RedirectToAction("Index", "Home");
+        }
+        #endregion
+
+
+
+        #region editProfile
+        [HttpGet]
+        public async Task<IActionResult> EditProfile(string? id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+
+                return RedirectToAction("Profile");
+            }
+            var user = await _userManager.GetUserAsync(User);
+            if (user != null)
+            {
+                bool existUser = UserExists(user.Id);
+
+                if (existUser)
+                {
+                    User u = await _userManager.FindByIdAsync(id);
+                    if (u != null)
+                    {
+                       var visa = _context.Visa
+                      .Where(v => v.UserId == u.Id)
+                      .FirstOrDefault();
+                        if (visa != null)
+                        {
+                            ViewBag.VisaNumber = visa.VisaNumber;
+                            ViewBag.ExpDate = visa.ExpDate;
+                        }
+                        else
+                        {
+                            ViewBag.VisaNumber = null;
+                            ViewBag.ExpDate = null;
+                        }
+                        return View(u);
+                    }
+                }
+
+            }
+            return RedirectToAction("Profile");
+        }
+        [HttpPost]
+        public async Task<IActionResult> EditProfile(User updatedUser)
+        {
+            var existingUser = await _userManager.GetUserAsync(User);
+
+            if (existingUser != null)
+            {
+                existingUser.FirstName = updatedUser.FirstName;
+                existingUser.LastName = updatedUser.LastName;
+                existingUser.Email = updatedUser.Email;
+                existingUser.PhoneNumber = updatedUser.PhoneNumber;
+
+                var result = await _userManager.UpdateAsync(existingUser);
+
+
+                if (result.Succeeded)
+                {
+
+                    return RedirectToAction("Profile");
+                }
+                else
+                {
+
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                }
+            }
+
+
+            return RedirectToAction("Profile");
+        }
+
+        #endregion
+
     }
 }

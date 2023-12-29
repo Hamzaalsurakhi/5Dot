@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using _5Dots.Data;
 using _5Dots.Models;
+using System.Security.Claims;
 
 namespace _5Dots.Controllers
 {
@@ -59,14 +60,15 @@ namespace _5Dots.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("VisaId,CVC,VisaNumber,ExpDate,UserId")] Visa visa)
         {
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
+                visa.UserId= User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 _context.Add(visa);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", visa.UserId);
-            return View(visa);
+                return RedirectToAction("Profile","Users");
+            //}
+            //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", visa.UserId);
+            //return View(visa);
         }
 
         // GET: Visas/Edit/5
@@ -123,16 +125,16 @@ namespace _5Dots.Controllers
         }
 
         // GET: Visas/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(string? Id)
         {
-            if (id == null || _context.Visa == null)
+            if (Id == null || _context.Visa == null)
             {
                 return NotFound();
             }
 
             var visa = await _context.Visa
                 .Include(v => v.User)
-                .FirstOrDefaultAsync(m => m.VisaId == id);
+                .FirstOrDefaultAsync(m => m.UserId == Id);
             if (visa == null)
             {
                 return NotFound();
@@ -144,20 +146,20 @@ namespace _5Dots.Controllers
         // POST: Visas/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int VisaId)
         {
             if (_context.Visa == null)
             {
                 return Problem("Entity set 'ApplicationDbContext.Visa'  is null.");
             }
-            var visa = await _context.Visa.FindAsync(id);
+            var visa = await _context.Visa.FindAsync(VisaId);
             if (visa != null)
             {
                 _context.Visa.Remove(visa);
             }
             
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Profile","Users");
         }
 
         private bool VisaExists(int id)
