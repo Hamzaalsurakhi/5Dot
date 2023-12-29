@@ -41,7 +41,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Carts");
+                    b.ToTable("Carts", (string)null);
                 });
 
             modelBuilder.Entity("_5Dots.Models.CartProduct", b =>
@@ -59,7 +59,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("CartProducts");
+                    b.ToTable("CartProducts", (string)null);
                 });
 
             modelBuilder.Entity("_5Dots.Models.Category", b =>
@@ -92,7 +92,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasKey("CategoryId");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("_5Dots.Models.Order", b =>
@@ -121,7 +121,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("_5Dots.Models.OrderProduct", b =>
@@ -139,7 +139,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OrderProduct");
+                    b.ToTable("OrderProduct", (string)null);
                 });
 
             modelBuilder.Entity("_5Dots.Models.Payment", b =>
@@ -163,7 +163,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("Payments");
+                    b.ToTable("Payments", (string)null);
                 });
 
             modelBuilder.Entity("_5Dots.Models.Product", b =>
@@ -211,7 +211,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("_5Dots.Models.ProductImage", b =>
@@ -241,7 +241,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductImages");
+                    b.ToTable("ProductImages", (string)null);
                 });
 
             modelBuilder.Entity("_5Dots.Models.Review", b =>
@@ -279,7 +279,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Reviews");
+                    b.ToTable("Reviews", (string)null);
                 });
 
             modelBuilder.Entity("_5Dots.Models.Testimonial", b =>
@@ -306,7 +306,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Testimonials");
+                    b.ToTable("Testimonials", (string)null);
                 });
 
             modelBuilder.Entity("_5Dots.Models.Visa", b =>
@@ -336,7 +336,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Visa");
+                    b.ToTable("Visa", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

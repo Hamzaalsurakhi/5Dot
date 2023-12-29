@@ -58,7 +58,7 @@ namespace _5Dots.Controllers
 
             ViewBag.products = _context.Products.ToList();
             ViewBag.Categories = _context.Categories.ToList();
-            ViewBag.Reviews = _context.Reviews.Include(review => review.Product).Include(review => review.User).ToList();
+            ViewBag.Reviews = _context.Reviews.Include(review => review.Product).Include(review => review.User).Where(review => review.ProductId == id).ToList();
             ViewBag.ProductImages = _context.ProductImages
             .Where(pi => pi.ProductId == id)
             .ToList();
