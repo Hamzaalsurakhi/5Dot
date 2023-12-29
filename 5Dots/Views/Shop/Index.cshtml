@@ -195,7 +195,7 @@
                                                             </div>
                                                             <div class="product__discount__item__text">
                                                                         <span>@item.Category.CategoryName</span>
-                                                                        <h5><a href="#">@item.ProductName</a></h5>
+                                                                                <h5><a asp-action="ProductDetails" asp-route-id="@item.ProductId">@item.ProductName</a></h5>
                                                 @{
                                                     var priceAfterDiscount = item.ProductPrice - (item.ProductPrice * item.ProductSale / 100);
 
@@ -256,7 +256,7 @@
                                         </ul>
                                     </div>
                                     <div class="product__item__text">
-                                                <h6><a href="#">@product.ProductName</a></h6>
+                                                        <h6><a asp-action="ProductDetails" asp-route-id="@product.ProductId">@product.ProductName</a></h6>
                                                 <h5>@string.Format("{0:C}", product.ProductPrice)</h5>
                                     </div>
                                 </div>

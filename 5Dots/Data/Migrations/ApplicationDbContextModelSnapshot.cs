@@ -262,8 +262,8 @@ namespace _5Dots.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("ReviewRate")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("ReviewRate")
+                        .HasColumnType("int");
 
                     b.Property<string>("ReviewStatus")
                         .IsRequired()
@@ -570,6 +570,10 @@ namespace _5Dots.Data.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

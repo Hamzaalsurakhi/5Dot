@@ -50,7 +50,7 @@ namespace _5Dots.Controllers
         public IActionResult Create()
         {
             ViewData["ProductId"] = new SelectList(_context.Products, "ProductId", "ProductDescription");
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id");
+            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Email");
             return View();
         }
 
@@ -59,17 +59,18 @@ namespace _5Dots.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ReviewId,ReviewMessage,ReviewRate,ReviewDate,ProductId,ReviewStatus,UserId")] Review review)
+        public async Task<IActionResult> Create( Review review)
         {
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
+            //review.UserId = 
                 _context.Add(review);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
-            ViewData["ProductId"] = new SelectList(_context.Products, "ProductId", "ProductDescription", review.ProductId);
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", review.UserId);
-            return View(review);
+            //}
+            //ViewData["ProductId"] = new SelectList(_context.Products, "ProductId", "ProductDescription", review.ProductId);
+            //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", review.UserId);
+            //return View(review);
         }
 
         // GET: Reviews/Edit/5

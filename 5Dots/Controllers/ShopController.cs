@@ -2,6 +2,7 @@
 using _5Dots.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 
 namespace _5Dots.Controllers
@@ -51,6 +52,30 @@ namespace _5Dots.Controllers
             }
 
             return View(category);
+        }
+        public async Task<IActionResult> ProductDetails(int? id)
+        {
+
+            ViewBag.products = _context.Products.ToList();
+            ViewBag.Categories = _context.Categories.ToList();
+            ViewBag.Reviews = _context.Reviews.Include(review => review.Product).Include(review => review.User).ToList();
+            ViewBag.ProductImages = _context.ProductImages
+            .Where(pi => pi.ProductId == id)
+            .ToList();
+
+            if (id == null || _context.Categories == null)
+            {
+                return NotFound();
+            }
+
+            var product = await _context.Products
+                .FirstOrDefaultAsync(m => m.ProductId == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return View(product);
         }
     }
     
