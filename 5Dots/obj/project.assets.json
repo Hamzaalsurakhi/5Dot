@@ -11657,20 +11657,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rania\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rania\\OneDrive\\Desktop\\E-Commerce\\5Dot\\5Dots\\5Dots.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\Five_Dots\\5Dot\\5Dots\\5Dots.csproj",
       "projectName": "5Dots",
-      "projectPath": "C:\\Users\\rania\\OneDrive\\Desktop\\E-Commerce\\5Dot\\5Dots\\5Dots.csproj",
-      "packagesPath": "C:\\Users\\rania\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rania\\OneDrive\\Desktop\\E-Commerce\\5Dot\\5Dots\\obj\\",
+      "projectPath": "C:\\Users\\user\\Documents\\Five_Dots\\5Dot\\5Dots\\5Dots.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Documents\\Five_Dots\\5Dot\\5Dots\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\rania\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"

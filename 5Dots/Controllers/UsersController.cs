@@ -205,6 +205,7 @@ namespace _5Dots.Controllers
         #region Profile
         public async Task<IActionResult> Profile()
         {
+            //UserPrfile
             var user = await _userManager.GetUserAsync(User);
 
             if (user != null)

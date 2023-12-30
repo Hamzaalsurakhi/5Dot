@@ -106,6 +106,7 @@ else
                 <tbody>
                     @foreach (var orderProduct in (List<OrderProduct>)(ViewBag.OrderProducts))
                     {
+
                         <tr>
                             <td>@orderProduct.Product.ProductName</td>
                             <td>@orderProduct.ProductQuantity</td>
