@@ -74,7 +74,14 @@ namespace _5Dots.Controllers
                 cartProduct.CartId = cart.CartId;
                 _context.Add(cartProduct);
                await _context.SaveChangesAsync();
-                cart.TotalPrice = quantity * product.ProductPrice;
+                if (product.ProductSale > 0)
+                {
+                    cart.TotalPrice = quantity *(@product.ProductPrice - (@product.ProductPrice *@product.ProductSale / 100));
+                }
+                else
+                {
+                    cart.TotalPrice = quantity * product.ProductPrice;
+                }
                 cart.TotalQuantity++;
                 _context.Update(cart);
                 await _context.SaveChangesAsync();
@@ -84,7 +91,14 @@ namespace _5Dots.Controllers
                 cartProduct_.ProductQuantity = quantity+cartProduct_.ProductQuantity;
                 _context.Update(cartProduct_);
                 await _context.SaveChangesAsync();
-                cart.TotalPrice += quantity * product.ProductPrice;
+                if (product.ProductSale > 0)
+                {
+                    cart.TotalPrice += quantity * (@product.ProductPrice - (@product.ProductPrice * @product.ProductSale / 100));
+                }
+                else
+                {
+                    cart.TotalPrice += quantity * product.ProductPrice;
+                }
                 _context.Update(cart);
                 await _context.SaveChangesAsync();
             }

@@ -93,7 +93,15 @@ namespace _5Dots.Controllers
             CartProduct cartProduct = _context.CartProducts.Include(cartP=>cartP.Product).Where(cartP => cartP.ProductId == ProductId && cartP.CartId == CartId).SingleOrDefault();
             Cart cart = _context.Carts.Where(cart => cart.CartId == CartId).SingleOrDefault();
             cart.TotalQuantity--;
-            cart.TotalPrice -= cartProduct.ProductQuantity * cartProduct.Product.ProductPrice;
+            if (product.ProductSale > 0)
+            {
+                cart.TotalPrice -= cartProduct.ProductQuantity * (product.ProductPrice - (product.ProductPrice * product.ProductSale / 100));
+
+            }
+            else
+            {
+                cart.TotalPrice -= cartProduct.ProductQuantity * product.ProductPrice;
+            }
             product.ProductQuantityStock += cartProduct.ProductQuantity;
             _context.Remove(cartProduct);
             await _context.SaveChangesAsync();
@@ -113,7 +121,14 @@ namespace _5Dots.Controllers
             if (cartProduct.ProductQuantity > 1)
             {
                 cartProduct.ProductQuantity--;
-                cart.TotalPrice -= product.ProductPrice;
+                if (product.ProductSale > 0)
+                {
+                    cart.TotalPrice -= (@product.ProductPrice - (@product.ProductPrice * @product.ProductSale / 100));
+                }
+                else
+                {
+                    cart.TotalPrice -= product.ProductPrice;
+                }
                 product.ProductQuantityStock++;
                 _context.Update(cartProduct);
                 await _context.SaveChangesAsync();
@@ -142,7 +157,14 @@ namespace _5Dots.Controllers
             CartProduct cartProduct = _context.CartProducts.Include(cartP => cartP.Product).Where(cartP => cartP.ProductId == ProductId && cartP.CartId == CartId).SingleOrDefault();
             Cart cart = _context.Carts.Where(cart => cart.CartId == CartId).SingleOrDefault();
             cartProduct.ProductQuantity++;
-            cart.TotalPrice += product.ProductPrice;
+            if (product.ProductSale > 0)
+            {
+                cart.TotalPrice += (@product.ProductPrice - (@product.ProductPrice * @product.ProductSale / 100));
+            }
+            else
+            {
+                cart.TotalPrice += product.ProductPrice;
+            }
             product.ProductQuantityStock--;
             _context.Update(cartProduct);
             await _context.SaveChangesAsync();
