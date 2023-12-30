@@ -57,26 +57,38 @@ namespace _5Dots.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-
-        public async Task<IActionResult> Create( Product product, IFormFile FormFile)
+        public async Task<IActionResult> Create(Product product, IFormFile FormFile)
         {
-            //if (ModelState.IsValid)
-            //{
-            using (var stream = FormFile.OpenReadStream())
-            using (var reader = new BinaryReader(stream))
+            if (FormFile != null && FormFile.Length > 0)
             {
-                var byteFile = reader.ReadBytes((int)stream.Length);
-                product.Image = byteFile;
-            }
-            product.ImageName = FormFile.FileName;
-            product.contentType = FormFile.ContentType;
-            _context.Add(product);
+
+                using (var stream = FormFile.OpenReadStream())
+                using (var reader = new BinaryReader(stream))
+                {
+                    var byteFile = reader.ReadBytes((int)stream.Length);
+                    product.Image = byteFile;
+                }
+
+                product.ImageName = FormFile.FileName;
+                product.contentType = FormFile.ContentType;
+
+
+                _context.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            //}
-            //ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName", product.CategoryId);
-            //return View(product);
+
+            }
+            else
+            {
+
+                ModelState.AddModelError("Image", "Please select an image.");
+            }
+
+
+
+            return View(product);
         }
+
 
         // GET: Products/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -126,7 +138,7 @@ namespace _5Dots.Controllers
                 p.ProductPrice = product.ProductPrice;
                 p.ProductSale = product.ProductSale;
                 p.ProductDescription = product.ProductDescription;
-                p.ProductName= product.ProductName;
+                p.ProductName = product.ProductName;
                 p.ProductQuantityStock = product.ProductQuantityStock;
                 p.CategoryId = product.CategoryId;
                 _context.Update(p);
@@ -182,14 +194,14 @@ namespace _5Dots.Controllers
             {
                 _context.Products.Remove(product);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ProductExists(int id)
         {
-          return (_context.Products?.Any(e => e.ProductId == id)).GetValueOrDefault();
+            return (_context.Products?.Any(e => e.ProductId == id)).GetValueOrDefault();
         }
     }
 }

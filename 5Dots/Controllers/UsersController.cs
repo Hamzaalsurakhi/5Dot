@@ -248,17 +248,12 @@ namespace _5Dots.Controllers
                 return RedirectToAction("Profile");
             }
             var user = await _userManager.GetUserAsync(User);
-            if (user != null)
-            {
-                bool existUser = UserExists(user.Id);
-
-                if (existUser)
-                {
-                    User u = await _userManager.FindByIdAsync(id);
-                    if (u != null)
+            
+                   
+                    if (user != null)
                     {
                        var visa = _context.Visa
-                      .Where(v => v.UserId == u.Id)
+                      .Where(v => v.UserId == user.Id)
                       .FirstOrDefault();
                         if (visa != null)
                         {
@@ -270,11 +265,10 @@ namespace _5Dots.Controllers
                             ViewBag.VisaNumber = null;
                             ViewBag.ExpDate = null;
                         }
-                        return View(u);
+                        return View(user);
                     }
-                }
 
-            }
+            
             return RedirectToAction("Profile");
         }
         [HttpPost]

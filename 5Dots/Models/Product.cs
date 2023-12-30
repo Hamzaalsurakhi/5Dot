@@ -28,16 +28,12 @@ namespace _5Dots.Models
         [Required(ErrorMessage = "Category ID is required")]
         public int CategoryId { get; set; }
 
-        [Required(ErrorMessage = "Category is required")]
-        public Category Category { get; set; }
+        public Category ?Category { get; set; }
 
-        [Required]
-        public string ImageName { get; set; }
-        [Required]
-        public string contentType { get; set; }
-        [Required]
-        public byte[] Image { get; set; }
-        public List<Review> Reviews { get; set; }
+        public string? ImageName { get; set; }
+        public string? contentType { get; set; }
+        public byte[] ?Image { get; set; }
+        public List<Review>? Reviews { get; set; }
 
 
         //public List<Order> Orders { get; set; }
