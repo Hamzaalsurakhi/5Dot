@@ -1983,3 +1983,12 @@ C:\Users\Lenovo\Desktop\MVC_Project\5Dot\5Dots\obj\Debug\net6.0\refint\5Dots.dll
 C:\Users\Lenovo\Desktop\MVC_Project\5Dot\5Dots\obj\Debug\net6.0\5Dots.pdb
 C:\Users\Lenovo\Desktop\MVC_Project\5Dot\5Dots\obj\Debug\net6.0\5Dots.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\MVC_Project\5Dot\5Dots\obj\Debug\net6.0\ref\5Dots.dll
+C:\Users\rania\OneDrive\Desktop\EC Pro\5Dot\5Dots\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+C:\Users\rania\OneDrive\Desktop\EC Pro\5Dot\5Dots\bin\Debug\net6.0\MailKit.dll
+C:\Users\rania\OneDrive\Desktop\EC Pro\5Dot\5Dots\bin\Debug\net6.0\MimeKit.dll
+C:\Users\rania\OneDrive\Desktop\EC Pro\5Dot\5Dots\bin\Debug\net6.0\NETCore.MailKit.dll
+C:\Users\rania\OneDrive\Desktop\EC Pro\5Dot\5Dots\bin\Debug\net6.0\System.Formats.Asn1.dll
+C:\Users\rania\OneDrive\Desktop\EC Pro\5Dot\5Dots\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\rania\OneDrive\Desktop\EC Pro\5Dot\5Dots\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+C:\Users\rania\OneDrive\Desktop\EC Pro\5Dot\5Dots\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\rania\OneDrive\Desktop\EC Pro\5Dot\5Dots\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll

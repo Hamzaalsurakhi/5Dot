@@ -182,8 +182,9 @@
                                                 <div class="latest-product__item__text">
                                                     <h6>@product.ProductName</h6>
                                                     @{
-                                                        decimal price = @product.ProductPrice - (@product.ProductPrice *
+                                                        decimal price = @product.ProductPrice - (@product.ProductPrice /
                                                         @product.ProductSale);
+                                                        price = Math.Round(price, 2);
                                                     }
                                                     <span>
                                                         @price JD<br />
