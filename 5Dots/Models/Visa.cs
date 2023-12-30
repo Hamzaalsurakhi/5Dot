@@ -21,7 +21,6 @@ namespace _5Dots.Models
         [DisplayFormat(DataFormatString = "{0:MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime ExpDate { get; set; }
 
-
         [Required(ErrorMessage = "User ID is required")]
         public string UserId { get; set; }
         public User User { get; set; }

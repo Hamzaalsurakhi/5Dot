@@ -3,10 +3,10 @@
 @using System.Security.Claims
 @using Microsoft.Data.SqlClient
 @{
-    var connectionString = "Server=DESKTOP-8URSSGI\\SQLEXPRESS;Database=FiveDots;Trusted_Connection=True;TrustServerCertificate=True";
+    var connectionString = "Server=.;Database=FiveDots;Trusted_Connection=True;TrustServerCertificate=True";
     var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
     var userRow = new Dictionary<string, object>();
-
+    Dictionary<string, object> cartRow = new Dictionary<string, object>();
     if (!string.IsNullOrEmpty(userId))
     {
         var query = "SELECT * FROM dbo.AspNetUsers WHERE Id = @UserId";
@@ -27,6 +27,36 @@
                         var columnName = reader.GetName(i);
                         var columnValue = reader.GetValue(i);
                         userRow.Add(columnName, columnValue);
+                    }
+                }
+            }
+        }
+    }
+
+    if (userRow.ContainsKey("Id"))
+    {
+        var userId_ = userRow["Id"].ToString(); 
+        var cartQuery = "SELECT * FROM carts WHERE UserId = @UserId";
+
+        
+
+        using (SqlConnection connection = new SqlConnection(connectionString))
+        using (SqlCommand cmd = new SqlCommand(cartQuery, connection))
+        {
+            connection.Open();
+
+            cmd.Parameters.Add(new SqlParameter("@UserId", userId_));
+
+            using (var reader = cmd.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    // Process the single row from the "carts" table
+                    for (int i = 0; i < reader.FieldCount; i++)
+                    {
+                        var columnName = reader.GetName(i);
+                        var columnValue = reader.GetValue(i);
+                        cartRow.Add(columnName, columnValue);
                     }
                 }
             }
@@ -56,6 +86,10 @@
     <link rel="stylesheet" href="~/assets/css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="~/assets/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="~/assets/css/style.css" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -69,7 +103,7 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="#"><img src="~/assets/img/logo2.png" alt=""></a>
+            <a href="/Home/Index"><img src="~/assets/img/logo2.png" alt=""></a>
         </div>
         <div class="humberger__menu__cart">
             <ul>
@@ -200,7 +234,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href=""><img src="~/assets/img/logo2.png" alt=""></a>
+                        <a href="/Home/Index"><img src="~/assets/img/logo2.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -213,12 +247,24 @@
                     </nav>
                 </div>
                 <div class="col-lg-3">
-                    <div class="header__cart">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-                        </ul>
-                        <div class="header__cart__price">total: <span>$150.00</span></div>
-                    </div>
+                    @if (signInManager.IsSignedIn(User) && userRow["Role"].ToString().ToUpper() == "USER")
+                    {
+                        <div class="header__cart">
+                            <ul>
+                                    <li><a href="/Shop/UserCart"><i class="fa fa-shopping-bag"></i> <span>@cartRow["TotalQuantity"]</span></a></li> 
+                            </ul>
+                            <div class="header__cart__price">total: <span>@cartRow["TotalPrice"] JD</span></div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="header__cart">
+                            <ul>
+                                <li><a href="/Carts/Index"><i class="fa fa-shopping-bag"></i> <span>0</span></a></li>
+                            </ul>
+                            <div class="header__cart__price">total: <span>0 JD</span></div>
+                        </div>
+                    }
                 </div>
             </div>
             <div class="humberger__open">

@@ -86,7 +86,7 @@ namespace _5Dots.Controllers
 
 
 
-            return View(product);
+            return RedirectToAction("Products","Admin",new { CategoryId  = product.CategoryId});
         }
 
 

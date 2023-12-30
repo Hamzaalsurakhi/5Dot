@@ -69,32 +69,38 @@
         <div class="product__details__text">
           <h3>@Model.ProductName</h3>
           <div class="product__details__rating">
-                @{
-                    int avgRate = 0;
-                        @foreach(var review in @ViewBag.Reviews)
-                    {
-                                avgRate += review.ReviewRate;
-                            }
-                            avgRate = avgRate / @ViewBag.Reviews.Count;
-                }
-            @for (int i = 0; i < avgRate; i++)
+
+            @if (@ViewBag.Reviews.Count != 0)
             {
-                <i class="fa fa-star" style="color: #ffc700;"></i>
+                int avgRate = 0;
+                foreach(var review in ViewBag.Reviews)
+                {
+                    avgRate += review.ReviewRate;
+                }
+                avgRate = avgRate / ViewBag.Reviews.Count;
+                for (int i = 0; i < avgRate; i++)
+                {
+                    <i class="fa fa-star" style="color: #ffc700;"></i>
+                }
             }
+            
             <span>@ViewBag.Reviews.Count Reviews</span>
           </div>
           <div class="product__details__price">@Model.ProductPrice JD</div>
           <p>@Model.ProductDescription</p>
+                    <form asp-controller="CartProducts"
+                          asp-action="Create_" asp-route-id="@Model.ProductId">
           <div class="product__details__quantity">
             <div class="quantity">
               <div class="pro-qty">
-                <input type="text" value="1">
+                <input type="text" name="quantity" min="0" max="@Model.ProductQuantityStock" value="0">
               </div>
             </div>
           </div>
-          <a href="#" class="primary-btn">ADD TO CART</a>
+                        <button class="primary-btn">ADD TO CART</button>
+                    </form>
           <ul>
-            <li><b>Availability</b> <span>@(Model.ProductQuantityStock > 0 ? "In Stock" : "Unavailable")</span></li>
+                        <li><b>Availability</b> <span>@(Model.ProductQuantityStock > 0 ? "In Stock" : "Out of Stock")</span></li>
 
           </ul>
         </div>
@@ -106,25 +112,9 @@
               <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
                 aria-selected="true">Description</a>
             </li>
-            @* <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab" aria-selected="false">Information</a>
-            </li> *@
             <li class="nav-item">
-              @* @{
-                int numberOfReviews = 0;
-                List<_5Dots.Models.Review> RelatedReviews = new List<_5Dots.Models.Review>();
-                foreach (var review in ViewBag.Reviews)
-                {
-                  if (review.ProductId == Model.ProductId)
-                  {
-                    numberOfReviews++;
-                    RelatedReviews.Add(review);
-                  }
-                }
-
-              } *@
-                  <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab" aria-selected="false">Reviews
-                    <span>@ViewBag.Reviews.Count</span></a>
+                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab" aria-selected="false">Reviews
+                <span>@ViewBag.Reviews.Count</span></a>
             </li>
           </ul>
           <div class="tab-content">
@@ -141,37 +131,42 @@
                   <div class="col-lg-6">
 
                     <div class="review_list">
-                        @{
+                        @if (ViewBag.Reviews.Count > 0)
+                        {
                             IEnumerable<Review> reviews = ViewBag.Reviews as IEnumerable<Review>;
                             var lastThreeReviews = reviews.Skip(Math.Max(0, reviews.Count() - 3));
-                        }
-                        @foreach (var item in lastThreeReviews)
-                        {
-                        <div class="review_item">
-                          <div class="media">
-                            <div class="d-flex">
-                              <img src="img/product/single-product/review-3.png" alt="" />
-                            </div>
-                            <div class="media-body ">
-                              <h4>@item.User.FirstName</h4>
-                              <div class="product__details__rating">
-                                  @for (int i = 0; i < item.ReviewRate; i++)
-                                  {
-                                        <i class="fa fa-star" style="color: #ffc700;"></i>
-                                  }
-                              </div>
-                            </div>
-                          </div>
-                            <p>
-                                @item.ReviewMessage
-                            </p>
-                            <p>
-                             @item.ReviewDate.ToString("dd MMMM yyyy")
-                            </p>
-                        </div>
+                            foreach (var item in lastThreeReviews)
+                            {
+                                <div class="review_item">
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <img src="img/product/single-product/review-3.png" alt="" />
+                                        </div>
+                                        <div class="media-body ">
+                                            <h4>@item.User.FirstName</h4>
+                                            <div class="product__details__rating">
+                                                @for (int i = 0; i < item.ReviewRate; i++)
+                                                {
+                                                    <i class="fa fa-star" style="color: #ffc700;"></i>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        @item.ReviewMessage
+                                    </p>
+                                    <p>
+                                        @item.ReviewDate.ToString("dd MMMM yyyy")
+                                    </p>
+                                                        </div>
 
-                        }
-                    </div>
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <h4>No Reviews</h4>
+                                                }
+                                            </div>
                   </div>
 
                   <div class="col-lg-6">
@@ -253,3 +248,4 @@
     </div>
   </div>
 </section>
+

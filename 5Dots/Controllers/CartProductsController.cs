@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using _5Dots.Data;
 using _5Dots.Models;
+using System.Security.Claims;
 
 namespace _5Dots.Controllers
 {
@@ -57,16 +58,43 @@ namespace _5Dots.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CartId,ProductQuantity,ProductId")] CartProduct cartProduct)
+        public async Task<IActionResult> Create_(int id,int quantity)
         {
-            if (ModelState.IsValid)
+            //if (ModelState.IsValid)
+            //{
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            Product product = _context.Products.Where(product => product.ProductId == id).SingleOrDefault();
+            Cart cart = _context.Carts.Where(cart => cart.UserId == userId).SingleOrDefault();
+            CartProduct cartProduct_ = _context.CartProducts.Where(cartP=>cartP.CartId == cart.CartId && cartP.ProductId == id).SingleOrDefault();
+            if(cartProduct_ == null)
             {
+                CartProduct cartProduct = new CartProduct();
+                cartProduct.ProductId = id;
+                cartProduct.ProductQuantity = quantity;
+                cartProduct.CartId = cart.CartId;
                 _context.Add(cartProduct);
+               await _context.SaveChangesAsync();
+                cart.TotalPrice = quantity * product.ProductPrice;
+                cart.TotalQuantity++;
+                _context.Update(cart);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
             }
-            ViewData["ProductId"] = new SelectList(_context.Products, "ProductId", "ProductDescription", cartProduct.ProductId);
-            return View(cartProduct);
+            else
+            {
+                cartProduct_.ProductQuantity = quantity+cartProduct_.ProductQuantity;
+                _context.Update(cartProduct_);
+                await _context.SaveChangesAsync();
+                cart.TotalPrice += quantity * product.ProductPrice;
+                _context.Update(cart);
+                await _context.SaveChangesAsync();
+            }
+            product.ProductQuantityStock-=quantity;
+            _context.Update(product);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("ProductDetails", "Shop", new {id = id});
+            //}
+            //ViewData["ProductId"] = new SelectList(_context.Products, "ProductId", "ProductDescription", cartProduct.ProductId);
+            //return View(cartProduct);
         }
 
         // GET: CartProducts/Edit/5

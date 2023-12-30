@@ -12,8 +12,8 @@ using _5Dots.Data;
 namespace _5Dots.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231227221233_bussness_layer")]
-    partial class bussness_layer
+    [Migration("20231230060039_BusinessLayer")]
+    partial class BusinessLayer
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -33,6 +33,9 @@ namespace _5Dots.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartId"), 1L, 1);
 
                     b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("TotalQuantity")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("UserId")
@@ -554,7 +557,6 @@ namespace _5Dots.Data.Migrations
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
                     b.Property<string>("ContentType")
-                        .IsRequired()
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");
 
@@ -567,7 +569,6 @@ namespace _5Dots.Data.Migrations
                         .HasColumnType("varbinary(max)");
 
                     b.Property<string>("ImageName")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -678,7 +679,7 @@ namespace _5Dots.Data.Migrations
             modelBuilder.Entity("_5Dots.Models.Review", b =>
                 {
                     b.HasOne("_5Dots.Models.Product", "Product")
-                        .WithMany()
+                        .WithMany("Reviews")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -770,6 +771,11 @@ namespace _5Dots.Data.Migrations
             modelBuilder.Entity("_5Dots.Models.Category", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("_5Dots.Models.Product", b =>
+                {
+                    b.Navigation("Reviews");
                 });
 #pragma warning restore 612, 618
         }

@@ -57,7 +57,7 @@
                                     <td>@review.Product.ProductName</td>
                                     <td>@review.ReviewMessage</td>
                                     <td>
-                                        <select asp-for="@review.ReviewStatus" onchange="confirmUpdateStatus(this.value, '@review.ReviewStatus')">
+                                        <select asp-for="@review.ReviewStatus" onchange="confirmUpdateStatus('@review.ReviewId', this.value, '@review.ReviewStatus')">
                                             @if (@review.ReviewStatus == "Pending")
                                             {
                                                 <option value="Pending" selected>Pending</option>
@@ -95,6 +95,7 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
     function confirmUpdateStatus(reviewId, newStatus, currentStatus) {
