@@ -30,9 +30,12 @@ namespace _5Dots.Models
 
         public Category ?Category { get; set; }
 
-        public string? ImageName { get; set; }
-        public string? contentType { get; set; }
-        public byte[] ?Image { get; set; }
+        [Required]
+        public string ImageName { get; set; }
+        [Required]
+        public string contentType { get; set; }
+        [Required]
+        public byte[] Image { get; set; }
         public List<Review>? Reviews { get; set; }
 
 

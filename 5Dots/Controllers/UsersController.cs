@@ -87,6 +87,12 @@ namespace _5Dots.Controllers
             };
             _context.UserRoles.Add(userRole);
             _context.SaveChanges();
+            Cart cart = new Cart();
+            cart.UserId=User.Id;
+            cart.TotalQuantity = 0;
+            cart.TotalPrice = 0;
+            _context.Carts.Add(cart);
+            _context.SaveChanges();
             return RedirectToAction(nameof(Index));
             //}
             //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", User.Id);

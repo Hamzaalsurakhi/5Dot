@@ -11,5 +11,7 @@ namespace _5Dots.Models
         public User User { get; set; }
         [Required]
         public decimal TotalPrice { get; set; }
+        [Required]
+        public int TotalQuantity { get; set; }
     }
 }

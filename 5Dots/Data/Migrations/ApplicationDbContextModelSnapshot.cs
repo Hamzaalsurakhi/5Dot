@@ -33,6 +33,9 @@ namespace _5Dots.Data.Migrations
                     b.Property<decimal>("TotalPrice")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<int>("TotalQuantity")
+                        .HasColumnType("int");
+
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
@@ -41,7 +44,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Carts", (string)null);
+                    b.ToTable("Carts");
                 });
 
             modelBuilder.Entity("_5Dots.Models.CartProduct", b =>
@@ -59,7 +62,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("CartProducts", (string)null);
+                    b.ToTable("CartProducts");
                 });
 
             modelBuilder.Entity("_5Dots.Models.Category", b =>
@@ -92,7 +95,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasKey("CategoryId");
 
-                    b.ToTable("Categories", (string)null);
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("_5Dots.Models.Order", b =>
@@ -121,7 +124,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Orders", (string)null);
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("_5Dots.Models.OrderProduct", b =>
@@ -132,14 +135,14 @@ namespace _5Dots.Data.Migrations
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Quantity")
+                    b.Property<int>("ProductQuantity")
                         .HasColumnType("int");
 
                     b.HasKey("OrderId", "ProductId");
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OrderProduct", (string)null);
+                    b.ToTable("OrderProduct");
                 });
 
             modelBuilder.Entity("_5Dots.Models.Payment", b =>
@@ -163,7 +166,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("Payments", (string)null);
+                    b.ToTable("Payments");
                 });
 
             modelBuilder.Entity("_5Dots.Models.Product", b =>
@@ -211,7 +214,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products", (string)null);
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("_5Dots.Models.ProductImage", b =>
@@ -241,7 +244,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductImages", (string)null);
+                    b.ToTable("ProductImages");
                 });
 
             modelBuilder.Entity("_5Dots.Models.Review", b =>
@@ -279,7 +282,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Reviews", (string)null);
+                    b.ToTable("Reviews");
                 });
 
             modelBuilder.Entity("_5Dots.Models.Testimonial", b =>
@@ -306,7 +309,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Testimonials", (string)null);
+                    b.ToTable("Testimonials");
                 });
 
             modelBuilder.Entity("_5Dots.Models.Visa", b =>
@@ -336,7 +339,7 @@ namespace _5Dots.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Visa", (string)null);
+                    b.ToTable("Visa");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -552,7 +555,6 @@ namespace _5Dots.Data.Migrations
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
                     b.Property<string>("ContentType")
-                        .IsRequired()
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");
 
@@ -565,7 +567,6 @@ namespace _5Dots.Data.Migrations
                         .HasColumnType("varbinary(max)");
 
                     b.Property<string>("ImageName")
-                        .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
@@ -676,7 +677,7 @@ namespace _5Dots.Data.Migrations
             modelBuilder.Entity("_5Dots.Models.Review", b =>
                 {
                     b.HasOne("_5Dots.Models.Product", "Product")
-                        .WithMany()
+                        .WithMany("Reviews")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -768,6 +769,11 @@ namespace _5Dots.Data.Migrations
             modelBuilder.Entity("_5Dots.Models.Category", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("_5Dots.Models.Product", b =>
+                {
+                    b.Navigation("Reviews");
                 });
 #pragma warning restore 612, 618
         }

@@ -56,7 +56,7 @@
                                     <td>@order.User.FirstName @order.User.LastName</td>
                                     <td>@order.TotalPrice JD</td>
                                     <td>
-                                        <select asp-for="@order.Status" onchange="confirmUpdateStatus(this.value, '@order.Status')">
+                                        <select asp-for="@order.Status" onchange="confirmUpdateStatus('@order.OrderId', this.value, '@order.Status')">
                                             @if (order.Status == "Pending")
                                             {
                                                 <option value="Pending" selected>Pending</option>
@@ -95,6 +95,7 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
     function confirmUpdateStatus(orderId, newStatus, currentStatus) {

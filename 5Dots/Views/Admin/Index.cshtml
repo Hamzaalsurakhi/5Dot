@@ -135,13 +135,13 @@
                            </tr>
                         </thead>
                         <tbody>
-                            @foreach(var product in (List<Product>)(ViewBag.Products))
+                            @foreach (var product in ((List<Product>)(ViewBag.Products)).Take(6))
                             {
-                                   <tr>
-                                        <td>@product.ProductName</td>
-                                        <td>@product.Category.CategoryName</td>
-                                        <td>@product.ProductQuantityStock</td>
-                                   </tr>         
+                                <tr>
+                                    <td>@product.ProductName</td>
+                                    <td>@product.Category.CategoryName</td>
+                                    <td>@product.ProductQuantityStock</td>
+                                </tr>
                             }
                         </tbody>
                      </table>
@@ -170,16 +170,17 @@
                   </div>
                </div>
                <div class="card-body">
-                   @foreach (var payment in (List<Payment>)(ViewBag.Payments))
-                   {
-                        <div class="mb-2  d-flex profile-media align-items-top">
+                    @foreach (var payment in ((List<Payment>)(ViewBag.Payments)).Take(4))
+                    {
+                        <div class="mb-2 d-flex profile-media align-items-top">
                             <div class="mt-1 profile-dots-pills border-primary"></div>
                             <div class="ms-4">
-                            <h6 class="mb-1 ">@payment.Order.TotalPrice JD, Purchase</h6>
-                            <span class="mb-0">@payment.TransactionDate</span>
+                                <h6 class="mb-1">@payment.Order.TotalPrice JD, Purchase</h6>
+                                <span class="mb-0">@payment.TransactionDate</span>
                             </div>
                         </div>
-                   }
+                    }
+
                </div>
             </div>
          </div>

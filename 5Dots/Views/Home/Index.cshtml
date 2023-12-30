@@ -103,7 +103,7 @@
                                     <a asp-controller="Shop" asp-action="ProductDetails"
                                          asp-route-id="@product.ProductId">@product.ProductName</a>
                                 </h6>
-                                @if (product.ProductPrice > 0)
+                                @if (product.ProductSale > 0)
                                 {
                                     <h5>@product.ProductPrice JD</h5>
                                      int sale = (int)product.ProductSale;
