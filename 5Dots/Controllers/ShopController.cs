@@ -4,8 +4,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
+using MimeKit;
+using System.Net.Mail;
 using System.Security.Claims;
-
+using MailKit.Net.Smtp;
 namespace _5Dots.Controllers
 {
     public class ShopController : Controller
@@ -188,7 +190,7 @@ namespace _5Dots.Controllers
             Cart cart = _context.Carts.Where(cart => cart.UserId == userId).SingleOrDefault();
             List<CartProduct> cartProducts = _context.CartProducts.Where(cartP => cartP.CartId == cart.CartId).ToList();
             Order order = new Order();
-            order.TotalPrice = cart.TotalPrice;
+            order.TotalPrice = cart.TotalPrice + 3; 
             order.UserId = userId;
             order.Status = "Pending";
             order.OrderRate = 0;
@@ -215,6 +217,7 @@ namespace _5Dots.Controllers
             cart.TotalQuantity= 0;
             _context.Update(cart);
             await _context.SaveChangesAsync();
+            await SendOrderConfirmationEmail(order);
             return RedirectToAction("Index","Home");
         }
         public IActionResult AddVisa()
@@ -230,5 +233,37 @@ namespace _5Dots.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("Checkout", "Shop");
         }
+        public async Task SendOrderConfirmationEmail(Order order)
+        {
+            string userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            User user = _context.Users.FirstOrDefault(u => u.Id == userId);
+
+            var email = new MimeMessage();
+            email.From.Add(new MailboxAddress("5Dots", "fivedotsoffice@gmail.com"));
+            email.To.Add(new MailboxAddress($"{user.FirstName} {user.LastName}", user.Email));
+            email.Subject = "Order Confirmation";
+
+            var bodyBuilder = new BodyBuilder();
+            bodyBuilder.TextBody = $"Dear {user.FirstName} {user.LastName},\n\n"
+                             + "Thank you for choosing us!\n"
+                             + $"Your order (Order ID: {order.OrderId}) has been successfully placed.\n"
+                             + $"Order Total: {order.TotalPrice-3} JD\n"
+                             + "The shipping cost is 3 JD.\n\n"
+                             + "We appreciate your business and look forward to serving you again!\n\n"
+                             + "Best regards,\n"
+                             + "5Dots Team";
+
+            email.Body = bodyBuilder.ToMessageBody();
+
+            using (var smtp = new MailKit.Net.Smtp.SmtpClient())
+            {
+                smtp.ServerCertificateValidationCallback = (sender, certificate, chain, errors) => true;
+                smtp.Connect("smtp.gmail.com", 587, false);
+                smtp.Authenticate("fivedotsoffice@gmail.com", "ecjodwaaclzuolqv");
+                await smtp.SendAsync(email);
+                smtp.Disconnect(true);
+            }
+        }
+
     }
 }

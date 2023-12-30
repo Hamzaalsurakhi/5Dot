@@ -28,7 +28,18 @@
                                 @product.ProductQuantity</a>
                                 <a href="/Shop/AddOneItemToProduct?ProductId=@product.ProductId&CartId=@product.CartId">+</a>
                         </div>
-                        <div class="col">@product.Product.ProductPrice JD<span class="close"><a href="/Shop/RemoveProductFromCart?ProductId=@product.ProductId&CartId=@product.CartId">&#10005;</a></span></div>
+                        @if (@product.Product.ProductSale > 0)
+                        {
+                            decimal price_ = @product.Product.ProductPrice - (@product.Product.ProductPrice /
+                            @product.Product.ProductSale);
+                            price_ = Math.Round(price_, 2);
+
+                            <div class="col">@price_ JD<span class="close"><a href="/Shop/RemoveProductFromCart?ProductId=@product.ProductId&CartId=@product.CartId">&#10005;</a></span></div>
+                        }
+                        else
+                        {
+                            <div class="col">@product.Product.ProductPrice JD<span class="close"><a href="/Shop/RemoveProductFromCart?ProductId=@product.ProductId&CartId=@product.CartId">&#10005;</a></span></div>
+                        }
                     </div>
                 </div>
             }
