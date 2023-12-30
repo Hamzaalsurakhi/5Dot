@@ -63,6 +63,10 @@ namespace _5Dots.Controllers
             //if (ModelState.IsValid)
             //{
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (userId == null)
+            {
+                return RedirectToPage("/Account/Login", new { area = "Identity" });
+            }
             Product product = _context.Products.Where(product => product.ProductId == id).SingleOrDefault();
             Cart cart = _context.Carts.Where(cart => cart.UserId == userId).SingleOrDefault();
             CartProduct cartProduct_ = _context.CartProducts.Where(cartP=>cartP.CartId == cart.CartId && cartP.ProductId == id).SingleOrDefault();
