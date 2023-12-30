@@ -62,8 +62,8 @@ namespace _5Dots.Controllers
         {
             //if (ModelState.IsValid)
             //{
-                visa.UserId= User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                _context.Add(visa);
+            visa.UserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            _context.Add(visa);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Profile","Users");
             //}
