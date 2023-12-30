@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace _5Dots.Data.Migrations
 {
-    public partial class BusinessLayer : Migration
+    public partial class businesslayer : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

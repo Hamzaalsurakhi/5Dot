@@ -12,8 +12,8 @@ using _5Dots.Data;
 namespace _5Dots.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231230141034_BusinessLayer")]
-    partial class BusinessLayer
+    [Migration("20231230155306_business-layer")]
+    partial class businesslayer
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
